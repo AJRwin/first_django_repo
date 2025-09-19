@@ -1,0 +1,5 @@
+# Reflection
+
+During the setup process, two of my biggest challenges were configuring URLs in Django and managing Git properly. At first, I had difficulty understanding how Django’s `urls.py` works. I often made mistakes with import paths and patterns, which led to errors when I tried to load pages. To solve this, I carefully reviewed the Django documentation and compared my code with working examples. Over time, I learned that every route must be properly linked to a view, and the project’s main `urls.py` should include app-level URLs using the `include()` function.  
+
+Another challenge I faced was with Git, especially when trying to push my files to GitHub. I encountered errors such as “refspec does not match any,” which were frustrating. I solved this by checking my branch name with `git branch` and verifying my remote URL with `git remote -v`. Once I corrected those, I was able to commit and push successfully. These struggles taught me the importance of paying attention to details and using Git commands to troubleshoot issues.
