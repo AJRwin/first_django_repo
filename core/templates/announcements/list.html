@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Announcements</h1>
+<ul>
+    {% for ann in announcements %}
+    <li>
+        <a href="{% url 'announcements:detail' ann.id %}">{{ ann.title }}</a>
+        <p>{{ ann.summary }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
