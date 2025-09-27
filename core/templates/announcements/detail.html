@@ -1,21 +1,8 @@
 {% extends "base.html" %}
+
 {% block content %}
 <h1>{{ announcement.title }}</h1>
 <p id="summary">{{ announcement.summary }}</p>
 <p id="content" style="display:none;">{{ announcement.content }}</p>
 <button id="toggleBtn">Read more</button>
-
-<script>
-const btn = document.getElementById("toggleBtn");
-const content = document.getElementById("content");
-btn.addEventListener("click", () => {
-    if(content.style.display === "none") {
-        content.style.display = "block";
-        btn.textContent = "Show less";
-    } else {
-        content.style.display = "none";
-        btn.textContent = "Read more";
-    }
-});
-</script>
 {% endblock %}
